@@ -73,6 +73,7 @@
       </div>
     </div>
 
+    <!-- Personas and Scenarios -->
     <div class="content-panel">
       <div class="inner-content">
         <h2>Personas & Scenarios</h2>
@@ -122,11 +123,15 @@
 
           <div class="slide-nav">
             <div class="slide-btns">
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class='slide-btn'></a>
-              <a class='slide-btn'></a>
-              <a class='slide-btn'></a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              <button class="slide-dir-btn" onclick="plusSlides(-1)">
+                <a class="prev">&#10094;</a>
+              </button>
+              <a class='slide-btn' onclick="currentSlide(1)"></a>
+              <a class='slide-btn' onclick="currentSlide(2)"></a>
+              <a class='slide-btn' onclick="currentSlide(3)"></a>
+              <button class="slide-dir-btn" onclick="plusSlides(1)">
+                <a class="next" >&#10095;</a>
+              </button>
             </div>
           </div>
 

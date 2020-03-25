@@ -71,10 +71,6 @@ footer {
   text-underline-position: under;
 }
 
-.nav-btn:hover {
-  background-color: plum;
-}
-
 .content{
   display: flex;
   flex-direction: column;
@@ -138,20 +134,7 @@ footer {
   margin-right: auto;
 }
 
-@media only screen and (min-width: 600px) {
-  .header-nav{
-    display: flex;
-  }
-  footer {
-    display: none;
-  }
 
-  .content {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
 
 .slide-container {
   max-width: 1000px;
@@ -161,7 +144,6 @@ footer {
   display: flex;
 }
 .prev, .next {
-  cursor: pointer;
   width: auto;
   color: black;
   font-weight: bold;
@@ -175,10 +157,6 @@ footer {
   border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
 
 .screens-container {
   display: flex;
@@ -189,7 +167,7 @@ footer {
 .slide-nav {
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: 100%;
   margin: auto;
 }
 
@@ -201,7 +179,12 @@ footer {
   height: 50px;
 }
 
+.slide-dir-btn {
+  cursor: pointer;
+}
+
 .slide-btn {
+  cursor: pointer;
   border-radius: 50%;
   color: black;
   width: 20px;
@@ -210,7 +193,7 @@ footer {
 }
 
 .active{
-  background-color: #717171;
+  background-color: plum;
 }
 
 .video-container{
@@ -218,7 +201,31 @@ footer {
   display: flex;
   justify-content: center;
 }
+
 .ucde-video {
-  width: 300px;
+  max-width: 300px;
   margin: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .header-nav{
+    display: flex;
+  }
+  footer {
+    display: none;
+  }
+
+  .nav-btn:hover {
+    background-color: plum;
+  }
+
+  .content {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .slide-nav {
+    width: 50%;
+  }
 }
