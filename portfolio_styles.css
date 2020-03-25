@@ -202,10 +202,14 @@ footer {
   justify-content: center;
 }
 
-/* .ucde-video {
+.ucde-video {
   max-width: 100%;
   height: auto;
-} */
+}
+
+.video-div {
+  display: none;
+}
 
 @media only screen and (min-width: 600px) {
   .header-nav{
@@ -227,5 +231,9 @@ footer {
 
   .slide-nav {
     width: 50%;
+  }
+
+  .video-div {
+    display: block;
   }
 }
