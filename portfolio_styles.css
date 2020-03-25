@@ -204,7 +204,8 @@ footer {
 }
 
 .ucde-video {
-  max-height: 400px;
+  max-height: 100px;
+  width: auto;
   border: solid red 1px;
 }
 
