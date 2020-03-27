@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width">
 </head>
 
-  <body onload="showSlides()">
+  <body onload="ucde_case_study_load()">
 
   <header id="header">
     <div class='fixed-header'>
@@ -62,7 +62,19 @@
     <div class="content-panel">
       <div class="inner-content">
         <h2>Process</h2>
-        <img id="process-svg" class="center-img" src="./assets/ucde-case-study/process.svg">
+        <img
+          id="process-svg"
+          class="center-img"
+          src="./assets/ucde-case-study/Asset 3.svg"
+        >
+        <p>
+          A user-centred design process was used. It was restricted by the
+          assessment specifications. The process comprised 4 sets of activities:
+          User Research; Personas & Scenarios; Design & Prototyping; and
+          Usability Testing. The above diagram illustrates the activity
+          sequencing. This case study will next dicuss each of the activities in
+          turn.
+        </p>
       </div>
     </div>
 
@@ -106,19 +118,37 @@
 
         <h3>Semi-structured Interviews</h3>
         <p>
-          The team conducted 20 semi-structured interviews to learn about the
+          The team conducted 20 semi-structured interviews (SSI) to learn about the
           users and their goals. Interviews were conducted in pairs such that
           one member acted as the interviewer and the second as a notetaker.
           Google forms was used to capture the participants responses. I, and
-          the teammate I worked with conducted 14 interviews and alternated
+          the teammate I worked with, conducted 14 interviews and alternated
           roles.
         </p>
         <p>
-          Semi-structured interviews were chosen becuase ...
+          The assessment specification required the use of either questionniares
+          or user interviews. SSI were chosen becuase of their flexibility.
+          The SSI format is flexible because it allows the interviewer to probe
+          the participant and for the format to be modified during the interview
+          process. This flexibility enabled us to use SSI to quickly gain an
+          indepth understanding of the target users.
         </p>
         <p>
-          The interviews had three sections. The first section captured
-          demographic information.
+          The interviews were designed to be about 15 minutes long. This length
+          was chosen because it would allow for us to recruit and interview a
+          suitable number of participants within our time constraints.
+          The interviews were comprised of three sections. The first section
+          captured the participants background. The second section explored
+          participants goals when interacting with campus. The third section
+          investigated their current experience when interacting with campus.
+        </p>
+        <p>
+          If the project had been less contrained by time and the specification,
+          a combination of methods could have been used gain a broader and more
+          indepth understanding of users. Questionniares would have enabled
+          reaching a larger and more diverse set of users. Combining SSI with
+          contextual inquiry would have enaled a more indepth understanding of
+          users existing practices and goals.
         </p>
       </div>
     </div>
@@ -127,16 +157,77 @@
     <div class="content-panel">
       <div class="inner-content">
         <h2>Personas & Scenarios</h2>
-        <h3>Persona</h3>
-        <img
-          id="persona-img"
-          class="center-img"
-          src="./assets/ucde-case-study/delores.png">
-        <h3>Scenario</h3>
-        <img
-          id="scenario-img"
-          class="center-img"
-          src="./assets/ucde-case-study/to-be-scenario.jpg">
+        <h3>Personas</h3>
+        <div class="personas">
+          <div class="persona-container">
+            <div class="persona">
+              <img
+                id="persona-img"
+                class="center-img"
+                src="./assets/ucde-case-study/delores.png"
+              >
+            </div>
+            <div class="persona">
+              <img
+                id="persona-img"
+                class="center-img"
+                src="./assets/ucde-case-study/lee.png">
+            </div>
+          </div>
+          <div class="slide-nav">
+            <div class="slide-btns">
+              <button class="slide-dir-btn" onclick="plusPersonas(-1)">
+                <a class="prev">&#10094;</a>
+              </button>
+              <a class='persona-btn' onclick="currentPersona(1)"></a>
+              <a class='persona-btn' onclick="currentPersona(2)"></a>
+              <button class="slide-dir-btn" onclick="plusPersonas(1)">
+                <a class="next" >&#10095;</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <p>
+          Two personas were created using the research data.
+        </p>
+        <h3>Scenarios</h3>
+        <div class="scenarios">
+          <div class="scenario-container">
+            <div class="scenario">
+              <img
+                id="scenario-img"
+                class="center-img"
+                src="./assets/ucde-case-study/as-is-scenario.jpg">
+            </div>
+            <div class="scenario">
+              <img
+                id="scenario-img"
+                class="center-img"
+                src="./assets/ucde-case-study/to-be-scenario.jpg">
+            </div>
+          </div>
+          <div class="slide-nav">
+            <div class="slide-btns">
+              <button class="slide-dir-btn" onclick="plusScenarios(-1)">
+                <a class="prev">&#10094;</a>
+              </button>
+              <a class='scenario-btn' onclick="currentScenario(1)"></a>
+              <a class='scenario-btn' onclick="currentScenario(2)"></a>
+              <button class="slide-dir-btn" onclick="plusScenarios
+              (1)">
+                <a class="next" >&#10095;</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <p>
+          Two scenarios were created. The first was an 'As-is' scenario which
+          describes ___ The second was a 'To-be' scenario that describes the
+          the to-be designed system in use.
+        </p>
+        <p>
+          Both scenarios were evaluated using <em>claims analysis</em>.
+        </p>
       </div>
     </div>
 
@@ -148,38 +239,31 @@
 
         <h3>Screens</h3>
         <p> Discussion about screens</p>
-        <div class="screens-container">
-
-          <div class="slide-container">
-            <div class="slides fade">
-              <img
-                id="test-home"
-                src="./assets/ucde-case-study/Artboard 1.png"
-              >
+        <div class="screens">
+          <div class="screen-container">
+            <div class="screen">
+              <img class="screen-img"
+              src="./assets/ucde-case-study/Artboard 1.png">
             </div>
-            <div class="slides fade">
-              <img
-                id="test-home"
-                src="./assets/ucde-case-study/Artboard 2.png"
-              >
+            <div class="screen">
+              <img class="screen-img"
+              src="./assets/ucde-case-study/Artboard 2.png">
             </div>
-            <div class="slides fade">
-              <img
-                id="test-home"
-                src="./assets/ucde-case-study/Artboard 3.png"
-              >
+            <div class="screen">
+              <img class="screen-img"
+              src="./assets/ucde-case-study/Artboard 3.png">
             </div>
           </div>
 
           <div class="slide-nav">
             <div class="slide-btns">
-              <button class="slide-dir-btn" onclick="plusSlides(-1)">
+              <button class="slide-dir-btn" onclick="plusScreens(-1)">
                 <a class="prev">&#10094;</a>
               </button>
-              <a class='slide-btn' onclick="currentSlide(1)"></a>
-              <a class='slide-btn' onclick="currentSlide(2)"></a>
-              <a class='slide-btn' onclick="currentSlide(3)"></a>
-              <button class="slide-dir-btn" onclick="plusSlides(1)">
+              <a class='screen-btn' onclick="currentScreen(1)"></a>
+              <a class='screen-btn' onclick="currentScreen(2)"></a>
+              <a class='screen-btn' onclick="currentScreen(3)"></a>
+              <button class="slide-dir-btn" onclick="plusScreens(1)">
                 <a class="next" >&#10095;</a>
               </button>
             </div>

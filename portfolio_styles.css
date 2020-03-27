@@ -116,7 +116,7 @@ footer {
   padding: 10px;
 }
 
-#persona-img, #scenario-img, #test-home{
+#persona-img, #scenario-img, .screen-img {
   width: 100%;
   max-width: 600px;
   height: auto;
@@ -124,7 +124,7 @@ footer {
 }
 #process-svg {
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   height: auto;
 }
 
@@ -134,9 +134,7 @@ footer {
   margin-right: auto;
 }
 
-
-
-.slide-container {
+.screen-container {
   max-width: 1000px;
   margin: auto;
   width: 100%;
@@ -183,7 +181,7 @@ footer {
   cursor: pointer;
 }
 
-.slide-btn {
+.screen-btn, .persona-btn, .scenario-btn{
   cursor: pointer;
   border-radius: 50%;
   color: black;
