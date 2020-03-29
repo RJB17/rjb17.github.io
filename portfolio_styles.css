@@ -116,7 +116,14 @@ footer {
   padding: 10px;
 }
 
-#persona-img, #scenario-img, .screen-img {
+.screen-img {
+  border: solid black 1px;
+  height: auto;
+  max-width: 200px;
+  width:100%;
+
+}
+#persona-img, #scenario-img{
   width: 100%;
   max-width: 600px;
   height: auto;
@@ -233,5 +240,9 @@ footer {
 
   .video-div {
     display: block;
+  }
+
+  .screen-img {
+    max-width: 300px;
   }
 }
