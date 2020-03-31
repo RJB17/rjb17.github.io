@@ -3,6 +3,7 @@
 <head>
   <title>Rob Bowman</title>
   <link rel="stylesheet" href="./portfolio_styles.css">
+  <link rel="stylesheet" href="./contact-form-style.css"
   <script src="./script.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Poppins:500|Roboto&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width">
@@ -20,18 +21,43 @@
 
       <div id="header-nav" class="header-nav">
         <a class="nav-btn" href="./index.html">About</a>
-        <a class="nav-btn" href="./case_study.html">Case Studies</a>
+        <a class="nav-btn" href="./case-studies.html">Case Studies</a>
         <a class="nav-btn current" href="./contact.html">Contact</a>
       </div>
 
   </div>
   </header>
 
-  <div id='content' class="content">
+  <div class="content">
     <h1>Contact</h1>
     <div class="content-panel">
       <div class="inner-content">
-        <p>Email & LinkedIn</p>
+        <div class="contact-form-container">
+          <h2>Email Form</h2>
+          <form action="send-email.php" class="contact-form">
+            <label for="name">Your Name:</label>
+            <input id="name" type="text" placeholder="Name" required>
+
+            <label for="email">Your Email:</label>
+            <input id="email" type="email" placeholder="Email" required>
+
+            <label for="subject">Subject:</label>
+            <input id="subject" type="text" placeholder="Subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Message"></textarea required>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-panel">
+      <div class="innner-content">
+        <a
+          href="https://www.linkedin.com/in/rjb7",
+          target="_blank">Rob's LinkedIn
+        </a>
       </div>
     </div>
   </div>
@@ -40,7 +66,7 @@
     <div class="fixed-footer">
       <div class="footer-nav">
         <a class="nav-btn" href="./index.html">About</a>
-        <a class="nav-btn" href="./case_study.html">Case Studies</a>
+        <a class="nav-btn" href="./case-studies.html">Case Studies</a>
         <a class="nav-btn current" href="./contact.html">Contact</a>
       </div>
     </div>

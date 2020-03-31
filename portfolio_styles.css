@@ -216,6 +216,21 @@ footer {
   display: none;
 }
 
+.tile-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.tile {
+  background-color: plum;
+  width: 400px;
+  height: 400px;
+  margin: 5px;
+  flex-shrink: 0;
+}
+
 @media only screen and (min-width: 600px) {
   .header-nav{
     display: flex;
