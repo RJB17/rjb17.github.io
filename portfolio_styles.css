@@ -223,12 +223,16 @@ footer {
   flex-wrap: wrap;
 }
 
+.tile-container a {
+  max-width: 100%;
+}
 .tile {
   background-color: plum;
   width: 400px;
   height: 400px;
   margin: 5px;
   flex-shrink: 0;
+  max-width: 100%
 }
 
 @media only screen and (min-width: 600px) {
