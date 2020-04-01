@@ -116,6 +116,12 @@ footer {
   padding: 10px;
 }
 
+.articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .screen-img {
   border: solid black 1px;
   height: auto;
@@ -123,13 +129,20 @@ footer {
   width:100%;
 
 }
-#persona-img, #scenario-img{
+.persona img,
+.scenario img,
+.bi-plot img,
+.truth-rating-img,
+.article img,
+.self-efficacy-img
+{
   width: 100%;
   max-width: 600px;
   height: auto;
   border: solid black 1px;
 }
-#process-svg {
+
+.process-svg {
   width: 100%;
   max-width: 500px;
   height: auto;
@@ -188,7 +201,12 @@ footer {
   cursor: pointer;
 }
 
-.screen-btn, .persona-btn, .scenario-btn{
+.screen-btn,
+.persona-btn,
+.scenario-btn,
+.bi-plot-btn,
+.article-btn
+{
   cursor: pointer;
   border-radius: 50%;
   color: black;

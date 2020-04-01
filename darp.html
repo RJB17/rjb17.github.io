@@ -5,11 +5,11 @@
   <title>Rob Bowman</title>
   <link rel="stylesheet" href="./portfolio_styles.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:500|Roboto&display=swap" rel="stylesheet">
-  <script src="./script.js"></script>
+  <script src="./darp-script.js"></script>
   <meta name="viewport" content="width=device-width">
 </head>
 
-  <body onload="ucde_case_study_load()">
+  <body onload="darp_load()">
 
   <header id="header">
     <div class='fixed-header'>
@@ -29,7 +29,7 @@
 
   <div id='content' class="content">
 
-    <h1> Case Study: Wayfinding </h1>
+    <h1> Case Study: Fake News </h1>
 
     <!-- Introduction -->
     <div class="content-panel">
@@ -37,8 +37,24 @@
         <h2>Introduction</h2>
         <p>
           University assessment to undertake a research project in a group. I
-          was assigned to a group of 4 and we were given the topic to reserach
+          was assigned to a group of 4 and we were given the topic to research
           of Fake News.
+        </p>
+      </div>
+    </div>
+
+    <!-- Process -->
+    <div class="content-panel">
+      <div class="inner-content">
+        <h2>Process</h2>
+        <img
+          src="./assets/darp-case-study/process.svg"
+          alt=""
+          class="process-svg center-img">
+        <p>
+          For this case study, the project shall be viewed as a sequence
+          of 4 stages: literature review; experiment; results; and discssion.
+          Each stage shall be discussed in turn.
         </p>
       </div>
     </div>
@@ -47,9 +63,76 @@
     <div class="content-panel">
       <div class=" inner-content">
         <h2>Literature Review</h2>
-        <p>Surveyed and reviewed the literature</p>
-        <p>Questions, methods, results</p>
-        <p>Motivation; background; research question</p>
+        <h3>Introduction</h3>
+        <p>
+          First, the existing literature was carefuly reviewed.
+          This involved: trawling the recent proceedings of reputable
+          conferences; searching key terms; and following up the references
+          of relevent publications. In the exisiting literature, the review
+          aimed to identify:
+        </p>
+        <ul>
+          <li>the research questions considered</li>
+          <li>the methods used</li>
+          <li>the results found</li>
+        </ul>
+        <p>
+          The goal was to find a gap in the exisiting research
+          with motivation to research it. Additionally, an understanding of
+          previously used methods would inform the design of this study's
+          method.
+        </p>
+        <p>
+          A current, open and interesting research area identified was:
+          <b>the design and use of tools to help users spot Fake News</b>.
+        </p>
+        <h3>Motivation & Background</h3>
+        <p>
+          The literature review defined Fake News to be disinformation
+          (intentionally false or misleading information) in the
+          form of news. Fake News is considered harmful and people are highly
+          susceptible to it due to multiple cognitive biases, thus, motivating
+          the study of tools to help people spot it.
+        </p>
+        <h3>Gap</h3>
+        <p>
+        Existing work found that:
+        </p>
+        <ol>
+          <li>People are bad at spotting Fake News</li>
+          <li>People think they are good at detecting Fake News</li>
+          <li>People were sceptical of tools to help them detect Fake News</li>
+        </ol>
+        <p>
+          Existing work had <b>not</b> identified if given tools to help
+          them detect Fake News people would use them. This project attempts
+          to fill some of this gap.
+        </p>
+        <h3>Context</h3>
+        <p>
+          The literature discussed how news consumption is changing with
+          social media, eg. Facebook and Twitter, becoming an increasingly
+          way to consume news content. Concequently, news consumption through
+          social media was deemed an appropriate setting to research.
+        </p>
+
+        <h3>Resulting Research Questions</h3>
+        <p>
+          The literature review provided motivation to research the question:
+          <b>do credibility signals in social media news feeds affect users'
+          perceptions of the truth of news?</b>
+        </p>
+        <p>
+          Credibility signals are one form of tool for helping users spot Fake
+          News. They are present an estimated level of credibility such as low
+          or high. They are a compromise between simpler tools like flags and
+          more complex visualisations.
+        </p>
+        <p>
+          A second research question was identified of: <b>does the task of
+          detecting Fake News affect peoples' perceptions of how good they are
+          at it?</b>
+        </p>
       </div>
     </div>
 
@@ -57,15 +140,138 @@
     <div class="content-panel">
       <div class="inner-content">
         <h2>Experiment</h2>
-        <h3>Design</h3>
-        <p>Hypothesis</p>
-        <p>Design Summary</p>
-        <h3>Description</h3>
-        <h4>Article Rating</h4>
-        <p>describe</p>
-        <p>images</p>
-        <h4>Questionnaires</h4>
-        <p>describe</p>
+        <p>
+          To investigate the research questions:
+        </p>
+        <ol>
+          <li>
+            Do credibility signals in social media news feeds affect users'
+            perceptions of the truth of news?
+          </li>
+          <li>
+            does the task of detecting Fake News affect peoples' perceptions
+            of how good they are at it?
+          </li>
+        </ol>
+        <p>
+          a mixed methods study was designed.
+        </p>
+        <h3>Rating Exercise</h3>
+        <p>
+          The primary method was a rating exercise. Participants were
+          presented with a sequence of news articles and asked to rate how
+          true they belived it to be. The articles were designed to appear
+          similarly to how they would be presented in a newsfeed.
+          The truth ratings were captured ussing a A 5-point
+          Likert item with the values:values:
+          ‘definitely false’; ‘probably false’; ‘unsure’; ‘probably true’;
+          and ‘definitely true’.
+        </p>
+        <div class="articles">
+          <h3>Example Articles</h3>
+          <div>
+            <div class="article">
+              <img
+                src="./assets/darp-case-study/N5H.jpg"
+                alt=""
+                class="center-img"
+              >
+            </div>
+            <div class="article">
+              <img
+                src="./assets/darp-case-study/N1L.jpg"
+                alt=""
+                class="center-img"
+
+              >
+            </div>
+          </div>
+
+          <div class="slide-nav">
+            <div class="slide-btns">
+              <button class="slide-dir-btn" onclick="plusArticles(-1)">
+                <a class="prev">&#10094;</a>
+              </button>
+              <a class='article-btn' onclick="currentArticle(1)"></a>
+              <a class='article-btn' onclick="currentArticle(2)"></a>
+              <button class="slide-dir-btn" onclick="plusArticles(1)">
+                <a class="next" >&#10095;</a>
+              </button>
+            </div>
+          </div>
+
+
+        </div>
+        <p>
+          Every article was presented with a crediblity signal of either low
+          or high value. The levels of the credibility signal formed one
+          independent variable of the study. Effects of showing certain
+          articles with certain signals were counter-balanced by partitioning
+          the participant into two groups such that for each article, the groups
+          were presented it with different signals. The group partition formed
+          the second independent variable of the study.
+        </p>
+        <p>
+          This resulted in a 2x2
+          mixed design, thus, four conditions as summarised by Tables 1 & 2.
+        </p>
+        <img
+          src="./assets/darp-case-study/table1.png"
+          alt=""
+          class="center-img"
+        >
+        <img
+          src="./assets/darp-case-study/table2.png"
+          alt=""
+          class="center-img"
+        >
+        <h3>Questionnaires</h3>
+        <p>
+          The rating exercise was complemented by pre- and post-questtionnaires.
+          The questionnaires had a few different purposes. First they were used
+          to collect sociodemographic information to enable an understanding of
+          who participated in the study which is important for evaluating the
+          studies validity. Second, it gathered information
+          relating to potential confounds including: the social media the
+          participants used and their familiarity with the articles presented
+          in the rating exercise; again this is important for assessing the
+          studies validity. The post-questionnaire explored why particpants
+          gave the truth ratings they did as well as how influenced they felt
+          by the signals and how believable they thought the signals were. This
+          information was gathered as it had the potential to help us
+          explain the results we collected. Finally, in both the pre- and
+          post-questionnaire participants were asked how good they thought
+          they were at detecting Fake News. This was asked, repeatedly, to
+          identify if the rating exercise decreases self-efficacy.
+        </p>
+        <h3>Hypothesis</h3>
+        <p>We believed that participants would be affected by the signals and
+        hypothesised that: high credibility signals in social media news feeds
+        will lead users to perceive the article as being more truthful.
+        </p>
+        <p>
+          The existing literature reported people to percieve themselves as
+          being good at detecting Fake News but bad in reality. We suspected
+          that the task of detecting Fake News may serve as a reality check,
+          thus, hypothesised that: the task of rating how true news articles
+          are will decrease peoples self efficacy at Fake News detection.
+        </p>
+        <h3>Running the study</h3>
+        <p>
+          The study was implemented using Qualtrics. First we piloted the study
+          with a small number of participants to identify problems with the
+          study and to modify it as necessary. The pilot indicated the study
+          was longer than targeted so modifications were made to shorten it. 60
+          student participants were recruited by approaching them in communal
+          areas of the university such as the library.
+        </p>
+        <p>
+          At the start of every session with a participant they were briefed
+          about the study and it was explained how their data would be used such
+          that they could give informed consent. They were able to withdraw,
+          without giving reason, during the experiment. At the end of the study
+          they were debriefed and able to ask any questions.
+        </p>
       </div>
     </div>
 
@@ -79,20 +285,60 @@
          </p>
         <h3>Hypothesis 1</h3>
         <p>boxplot truth ratings </p>
+        <img
+          src="./assets/darp-case-study/truth-ratings.png"
+          alt=""
+          class="center-img truth-rating-img"
+        >
         <p>Believability & Influence</p>
+        <div class="bel-inf-plots">
+          <div>
+            <div class="bi-plot">
+              <img
+                src="./assets/darp-case-study/believability.png"
+                alt=""
+                class="center-img">
+            </div>
+            <div class="bi-plot">
+              <img
+                src="./assets/darp-case-study/influence.png"
+                alt=""
+                class="center-img">
+            </div>
+          </div>
+
+          <div class="slide-nav">
+            <div class="slide-btns">
+              <button class="slide-dir-btn" onclick="plusPlots(-1)">
+                <a class="prev">&#10094;</a>
+              </button>
+              <a class='bi-plot-btn' onclick="currentPlot(1)"></a>
+              <a class='bi-plot-btn' onclick="currentPlot(2)"></a>
+              <button class="slide-dir-btn" onclick="plusPlots(1)">
+                <a class="next" >&#10095;</a>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
         <p>Content Analysis - but I was not involved</p>
         <h3>Hypothesis 2</h3>
         <p>Self Efficacy Plots</p>
+        <img
+          src="./assets/darp-case-study/self-efficacy.png"
+          alt=""
+          class="center-img self-efficacy-img"
+          >
       </div>
     </div>
 
+    <!--Discusssion  -->
     <div class="content-panel">
       <div class="inner-content">
         <h2>Discussion</h2>
       </div>
     </div>
-
-
 
     <!-- Conclusion  -->
     <div class="content-panel">
