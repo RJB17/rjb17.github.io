@@ -142,6 +142,15 @@ footer {
   border: solid black 1px;
 }
 
+.table1, .table2 {
+  border: solid black 1px;
+  margin: 5px;
+  width: 100%;
+  height: : auto;
+}
+.table1{max-width: 254px;}
+.table2{max-width: 575px;}
+
 .process-svg {
   width: 100%;
   max-width: 500px;
