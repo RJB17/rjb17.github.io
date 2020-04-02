@@ -40,6 +40,9 @@
           was assigned to a group of 4 and we were given the topic to research
           of Fake News.
         </p>
+        <p>
+          <b>Tags</b>
+        </p>
       </div>
     </div>
 
@@ -53,7 +56,7 @@
           class="process-svg center-img">
         <p>
           For this case study, the project shall be viewed as a sequence
-          of 4 stages: literature review; experiment; results; and discssion.
+          of 4 stages: literature review; experiment; results; and discussion.
           Each stage shall be discussed in turn.
         </p>
       </div>
@@ -149,7 +152,7 @@
             perceptions of the truth of news?
           </li>
           <li>
-            does the task of detecting Fake News affect peoples' perceptions
+            Does the task of detecting Fake News affect peoples' perceptions
             of how good they are at it?
           </li>
         </ol>
@@ -280,56 +283,128 @@
       <div class="inner-content">
         <h2>Results</h2>
         <p>
-          I did a large amount of the work processing and exploring the data
-          and running the tests Python & R.
+          The experiment collected a large amount of data. The collected data
+          could be downloaded from Qualtrics as a large spreadsheet. Using
+          Python, largely the Pandas library, I processed the data to produce
+          a set of data files containing the data required for each part of
+          the analysis in appropriate forms.
+         </p>
+         <p>
+           Using R, a team mate and I, explored each of the data sets using
+           descriptive statistics and data visualisation. We used approapriate
+           statistical tests to test our hypothesis.
          </p>
         <h3>Hypothesis 1</h3>
-        <p>boxplot truth ratings </p>
+        <p>
+          The first hypothesis was: high credibility signals in social media
+          news feeds will lead users to perceive the article as being more
+          truthful. To test this hypothesis we wanted to compare the mean truth
+          ratings of articles with low crediblity and articles
+          with high crediblity. If the hypothesis is correct we would hope to
+          to see a difference in location i.e. we would expect the mean of the
+          high credibility level to be greater than the mean of the low
+          credibility level.
+        </p>
         <img
           src="./assets/darp-case-study/truth-ratings.png"
           alt=""
           class="center-img truth-rating-img"
         >
-        <p>Believability & Influence</p>
-        <div class="bel-inf-plots">
-          <div>
-            <div class="bi-plot">
-              <img
-                src="./assets/darp-case-study/believability.png"
-                alt=""
-                class="center-img">
-            </div>
-            <div class="bi-plot">
-              <img
-                src="./assets/darp-case-study/influence.png"
-                alt=""
-                class="center-img">
-            </div>
-          </div>
+        <p>
+          Given the 2x2 mixed design of the experiment, the appropriate
+          statistical test was a 2x2 mixed ANOVA. This tested for three
+          things. This ombnibus test examines 3 possible effects.
+        </p>
+        <p>
+          The first effect is a main effect for the Credibility Signal IV.
+          This is the effect changing the level of the Credibility Signal
+          has on the Mean Truth Rating DV. The hypothesis predicts an
+          effect for the Credibility Signal, however, the ANOVA showed there
+          was not a statistically significant one.
+          F(1,56)=2.726, p=.104, η2=.046. This can be seen visually from
+          the boxplot above - the high signal conditions (A.high & B.high)
+          were not rated notably more true then the low signal conditions
+          (A.low & B.low).
+        </p>
+        <p>
+          The second effect is a main effect for the Group IV. This is the
+          effect of changing the Group IV on the Truth Rating DV. No effect is
+          expected here. Surprisingly, the ANOVA reported a significant large
+          effect. F(1,56)=8.520, p=.005, partial η2=.132 This indicates that
+          Group B thought the articles were more likely true than Group A.
+        </p>
+        <p>
+          The final effect was the interaction effect. This effect that the
+          combination of the Credibility Signal IV and the Group IV has on
+          the DV. We expect the IVs to be independent, hence, we do not expect
+          there to be an effect. As expected, the ANOVA did not find a
+          significant interaction effect. F(1,56)=0.041, p=.839, η2=.001
+        </p>
+        <p>
+          In summary
+        </p>
 
-          <div class="slide-nav">
-            <div class="slide-btns">
-              <button class="slide-dir-btn" onclick="plusPlots(-1)">
-                <a class="prev">&#10094;</a>
-              </button>
-              <a class='bi-plot-btn' onclick="currentPlot(1)"></a>
-              <a class='bi-plot-btn' onclick="currentPlot(2)"></a>
-              <button class="slide-dir-btn" onclick="plusPlots(1)">
-                <a class="next" >&#10095;</a>
-              </button>
-            </div>
-          </div>
-
-        </div>
-
-        <p>Content Analysis - but I was not involved</p>
         <h3>Hypothesis 2</h3>
-        <p>Self Efficacy Plots</p>
+        <p>
+          Hypothesis 2 was: the task of rating how true news articles
+          are will decrease peoples self-efficacy at Fake News detection
+        </p>
+        <p>
+          Repeat measures of people self-efficacy at Fake News detection.
+          The first measure was before the rating exercise and the second
+          after. A 5-point Likert item was used with the values:
+          very bad, bad, average, good and very good. The change if
+          self-efficacy was computed by deducting the first measure
+          from the second per participant.
+        </p>
+        <p>
+          The boxplot below visually describes the set of self-efficacy changes
+          recorded. It is clearly skewed to negative values showing a decrease
+          in self-efficacy.
+        </p>
         <img
-          src="./assets/darp-case-study/self-efficacy.png"
+          src="./assets/darp-case-study/change.png"
           alt=""
           class="center-img self-efficacy-img"
           >
+        <p>
+          To test the hypothesis formally, a Wilcoxon signed-rank test was used.
+          The test reported T(30) = 55, p<.001. This means that there was a
+          statistically significant change in self-efficacy which supports the
+          hypothesis.
+        </p>
+        <h3>Believability & Influence</h3>
+          <div class="bel-inf-plots">
+            <div>
+              <div class="bi-plot">
+                <img
+                  src="./assets/darp-case-study/believability.png"
+                  alt=""
+                  class="center-img">
+              </div>
+              <div class="bi-plot">
+                <img
+                  src="./assets/darp-case-study/influence.png"
+                  alt=""
+                  class="center-img">
+              </div>
+            </div>
+
+            <div class="slide-nav">
+              <div class="slide-btns">
+                <button class="slide-dir-btn" onclick="plusPlots(-1)">
+                  <a class="prev">&#10094;</a>
+                </button>
+                <a class='bi-plot-btn' onclick="currentPlot(1)"></a>
+                <a class='bi-plot-btn' onclick="currentPlot(2)"></a>
+                <button class="slide-dir-btn" onclick="plusPlots(1)">
+                  <a class="next" >&#10095;</a>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
       </div>
     </div>
 
