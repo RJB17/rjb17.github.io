@@ -31,6 +31,18 @@ header {
   margin-right: 5%;
 }
 
+.back-btn {
+  color: black;
+  background: lightgrey;
+  padding: 10px 10px;
+  width: fit-content;
+  text-decoration: none;
+  border-radius: 8px;
+}
+.back-btn:hover {
+  background: plum;
+}
+
 footer {
   position: fixed;
   width: 100%;
@@ -125,7 +137,6 @@ footer {
 .screen-img {
   border: solid black 1px;
   height: auto;
-  max-width: 200px;
   width:100%;
 
 }
@@ -137,7 +148,7 @@ footer {
 .self-efficacy-img
 {
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   height: auto;
   border: solid black 1px;
 }
@@ -171,17 +182,20 @@ footer {
   display: flex;
 }
 .prev, .next {
-  width: auto;
   color: black;
+  background: lightgrey;
   font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  padding: 5px 10px;
 }
 
+.prev:hover, .next:hover {
+  background: plum;
+}
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
 }
 
 
@@ -250,16 +264,26 @@ footer {
   flex-wrap: wrap;
 }
 
-.tile-container a {
-  max-width: 100%;
+.tile-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 10px 20px 10px;
 }
-.tile {
-  background-color: plum;
-  width: 400px;
-  height: 400px;
-  margin: 5px;
-  flex-shrink: 0;
-  max-width: 100%
+.cs-tile {
+  width:100%;
+  height: auto;
+}
+.cs-btn {
+  cursor: pointer;
+  background-color: lightgrey;
+  font-size: 24px;
+  padding: 10px 15px;
+  text-align: center;
+  border-radius: 8px;
+}
+.cs-btn:hover {
+  background-color: plum
 }
 
 @media only screen and (min-width: 600px) {
@@ -289,6 +313,6 @@ footer {
   }
 
   .screen-img {
-    max-width: 300px;
+    max-width: 800px;
   }
 }
