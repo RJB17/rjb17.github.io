@@ -14,8 +14,9 @@ body {
 header {
   position: fixed;
   width: 100%;
-  transition: .3s;
   height: 50px;
+  z-index: 1;
+
 }
 
 .fixed-header {
@@ -189,6 +190,7 @@ footer {
   font-size: 25px;
   cursor: pointer;
   padding: 5px 10px;
+  border-radius: 10px;
 }
 
 .prev:hover, .next:hover {
@@ -284,6 +286,11 @@ footer {
 }
 .cs-btn:hover {
   background-color: plum
+}
+
+video {
+  z-index: 0;
+  margin: 10px;
 }
 
 @media only screen and (min-width: 600px) {
