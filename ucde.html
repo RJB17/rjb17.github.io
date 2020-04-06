@@ -106,8 +106,7 @@
         interviews. The interviews were informed and complemented by an audit
         of related products and the creation of a persona hypothesis.
 
-
-        <h3>Related Product Audit</h3>
+        <h3 class="header-follow">Related Product Audit</h3>
         <p>
           Relevant existing services were examined to understand how they
           address user goals and needs. The services investigated were:
@@ -122,7 +121,7 @@
           by instead using an expert evaluation method.
         </p>
 
-        <h3>Persona Hypothesis</h3>
+        <h3 class="header-follow">Persona Hypothesis</h3>
         <p>
           A personas hypothesis (PH) predicts who the users are and
           their needs and goals.
@@ -142,7 +141,7 @@
           <li>How do users travel? eg. walk; bus; bike.</li>
         </ul>
 
-        <h3>Semi-structured Interviews</h3>
+        <h3 class="header-follow">Semi-structured Interviews</h3>
         <p>
           The team conducted 20 semi-structured interviews (SSI) to learn about the
           users and their goals. Interviews were conducted in pairs such that
@@ -177,7 +176,7 @@
           users existing practices and goals.
         </p>
 
-        <h3>Ethics</h3>
+        <h3 class="header-follow">Ethics</h3>
         <p>
           Research must be conducted ethically.
           Before starting each interview, the participant was briefed
@@ -187,7 +186,7 @@
           consent to interview them.
         </p>
 
-        <h3>Findings</h3>
+        <h3 class="header-follow">Findings</h3>
         <p>
           A lot was learnt about the users and their goals from the user
           research. This section shall describe a few of the most influential
@@ -225,14 +224,12 @@
           <div class="persona-container">
             <div class="persona">
               <img
-                id="persona-img"
                 class="center-img"
                 src="./assets/ucde-case-study/personas/delores.png"
               >
             </div>
             <div class="persona">
               <img
-                id="persona-img"
                 class="center-img"
                 src="./assets/ucde-case-study/personas/lee.png">
             </div>
@@ -405,24 +402,129 @@
     <div class="content-panel">
       <div class="inner-content">
         <h2>Usability Testing</h2>
-
-        <h3>Expert</h3>
-        The team evaluated the prototype using the expert evalutation method
-        Collaborative Heuristic Evaluation (CHE). The evaluation involved, as a
-        team, interacting with the prototype and looking for areas where the
-        design does not satisfy a predetirmined set of design heuristics.
-        Nielsen and Molich's heuristics were used. Independently, each team
-        member rated the severity of each problem. The problems and their rating
-        were then discussed.
-      </p>
-      <p>
-        It was concluded that there were a number of problems relating to
-        feedback the information presented to the user as they progressed through
-      </p>
-        <h3>Think Aloud</h3>
         <p>
-        Concurrent Verbal Protocol
-      </p>
+          Usability testing was used to find problems with the design and areas
+          for improvement. The finding were used to improve future iterations
+          of the design. Two forms of testing were used which shall now be
+          discussed.
+        </p>
+        <h3 class="header-follow">Expert Evaluation</h3>
+        <p>
+            The team evaluated the prototype using the expert evalutation method
+          Collaborative Heuristic Evaluation (CHE). The evaluation involved, as a
+          team, interacting with the prototype and looking for areas where the
+          design does not satisfy a predetirmined set of design heuristics.
+          Nielsen and Molich's heuristics were used. Independently, each team
+          member rated the severity of each problem. The problems and their
+          rating were then discussed.
+        </p>
+        <p>
+          The two most severe problems that the CHE identified were: icons with
+          unclear meanings and insufficient information carry over.
+        </p>
+        <p>
+          The design used custom icons. An example is an icon was created
+          to symbolise sheltered walking as a mode of travelling. A custom
+          icon was used as we were unaware of a pre-existing icon. A potential
+          problem with using an icon without an established meaning is that
+          its meaning may be unclear to users.
+        </p>
+        <p>
+          To address the potential problem of the meaning of icons being
+          unclear, the use of icons was modified such that tapping them would
+          open a pop-up with a text description.
+        </p>
+        <div class="popup">
+          <h3>Sheltered Walking Icon & Pop-up Description</h3>
+          <img
+            src="./assets/ucde-case-study/testing/shelter.svg"
+            class="center-img"
+            alt=""
+            style="height:100px; width:auto;">
+          <img
+            src="./assets/ucde-case-study/testing/popup.svg"
+            class="center-img popup-img"
+            style="margin-bottom:1em;"
+            alt="">
+        </div>
+        <p>
+          The second problem the expert evaluation identified with the design
+          was insufficient information carry over. This means that information
+          from previous steps is not shown on the succeeding step depsite
+          being relavent.
+        </p>
+        <p>
+          This is an issue as it both gives insufficient feedback to the user
+          that the information has been captured and demands the user recall
+          the information.
+        </p>
+        <p>
+          An example of this was that the application asked the user what time
+          they want to arrive by and then on the succeeding screen did not
+          present the information. The purpose of the suceeding screen was
+          route selection, hence, the target arrival time was relavent
+          information.
+        </p>
+        <p>
+          The following images demonstate modification of the design to address
+          the problem. Note that the images show different iterations of the
+          design and that the 'after' iteration features multiple modifications
+          that attempt to improve the design.
+        </p>
+        <img
+          src="./assets/ucde-case-study/testing/before.png"
+          class="center-img info-carry"
+          alt=""
+        >
+        <img
+          src="./assets/ucde-case-study/testing/after.png"
+          class="center-img info-carry"
+          alt=""
+        >
+        <h3 class="header-follow">Think Aloud</h3>
+        <p>
+          Think aloud testings, a.k.a. concurrent verbal protocol, was used
+          to test the interactive prototype with users. Think aloud testing
+          works by asking participants to complete tasks and speak aloud
+          their thought process.
+        </p>
+        <p>
+          The team tested the interactive prototype with 8 participants
+          who were recruited from around the University's campuses. All
+          participants were briefed, gave informed consent and were debriefed.
+          The tests were conducted by team members working in pairs where one
+          member facilitated the test and the other recored the findings. I and
+          the teammate I worked with conducted 4 tests and alternated roles.
+        </p>
+        <p>
+          During the tests, when the participant encountered problems they were
+          asked to rate the severity of the problem. By considering how many
+          times problems occur and how severe participants percieved them the
+          significence of problems can be gauged. Based on this we went on to
+          modify the design with the goal of addressing problems.
+        </p>
+        <p>
+          A common occurence during think aloud testing was that participants
+          at first were unsure what components of the application meant or did.
+          However, participants were quickly able to learn the meaning
+          and functions, they commonly expressed that the behaviour then seemed
+          obvious and made sense.
+        </p>
+        <p>
+          Another common participant reponse was to critique the visual
+          appearence of the prototype because of its low fidelity. This was
+          considered a big issue because the prototype was intentionally low
+          fidelity as this point. If we continued to develop the design we
+          increase the effort put into visual design and the testing of it.
+        </p>
+        <p>
+          The think aloud testing aloud for us to observe if our solutions to
+          previously discovered problems were effective. For example, during
+          the testing we observed that participants were unsure what the
+          Sheltered Walking icon meant, but, they discovered its meaning
+          throught the pop-up text description and then were happy interacting
+          with it. This indicates that the solution was effective.
+        </p>
       </div>
     </div>
 
@@ -433,7 +535,7 @@
       </div>
     </div>
 
-<a class="back-btn" href="./case-studies.html">&#10094; All Case Studies</a>
+  <a class="back-btn" href="./case-studies.html">&#10094; All Case Studies</a>
   </div>
 
 
