@@ -172,7 +172,6 @@ footer {
 }
 .persona img,
 .scenario img,
-.bi-plot img,
 .truth-rating-img,
 .article img,
 .self-efficacy-img,
@@ -183,6 +182,7 @@ footer {
   height: auto;
   border: solid black 1px;
   margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .table1, .table2 {
@@ -198,6 +198,14 @@ footer {
   width: 100%;
   max-width: 500px;
   height: auto;
+}
+.bi-plot {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border: solid black 1px;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .center-img {
