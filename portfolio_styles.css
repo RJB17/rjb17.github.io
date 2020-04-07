@@ -172,6 +172,7 @@ footer {
   max-width: 300px;
   height: auto;
   margin-top: 1em;
+  margin-bottom: 2em;
 }
 .persona img,
 .scenario img,
@@ -187,6 +188,7 @@ footer {
   margin-top: 1em;
   margin-bottom: 1em;
 }
+
 
 .table1, .table2 {
   border: solid black 1px;
