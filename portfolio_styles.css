@@ -12,7 +12,10 @@ h2 {
 h3 {
   font-size: 21px;
 }
-
+h4 {
+  margin-top: 1em;
+  margin-bottom: 0;
+}
 .header-follow {
   margin-top: 2em;
   margin-bottom: 0em;
