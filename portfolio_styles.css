@@ -188,7 +188,11 @@ footer {
   margin-top: 1em;
   margin-bottom: 1em;
 }
-
+.signal {
+  max-width: 200px;
+  height:auto;
+  width:100%
+}
 
 .table1, .table2 {
   border: solid black 1px;
