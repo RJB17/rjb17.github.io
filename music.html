@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width">
 </head>
 
-  <body onload="ucde_case_study_load()">
+  <body>
 
   <header id="header">
     <div class='fixed-header'>
@@ -54,6 +54,7 @@
         <p>
           Tags:
           <b>prototyping</b>,
+          <b>Figma</b>,
           <b>interaction design</b>,
           <b>usability testing</b>.
         </p>
@@ -77,7 +78,7 @@
           for this project were to practise specific skills and explore
           specific ideas.
         </p>
-        <h3>Ergonomics</h3>
+        <h3 class="header-follow">Ergonomics</h3>
         <p>
           Typically when using a smartphone the hand is used to both hold
           the device and to interact with it. The thumb is used for most
@@ -120,7 +121,7 @@
           recommendations.</b>
         </p>
 
-        <h3>Listening to Music</h3>
+        <h3 class="header-follow">Listening to Music</h3>
         <p>
           People listen to songs in series. That series may be an album,
           a playlist or a queue - I will refer to these collectively as
@@ -151,9 +152,22 @@
     <!-- Design and Prototype -->
     <div class="content-panel">
       <div class="inner-content">
-        <h2>Design & Prototyping</h2>
+        <h2 class="header-start">Design & Prototyping</h2>
+        <h3 class="header-follow">Approach</h3>
+        <p>
+          I wanted the playlist to be the core of this application so I
+          started the design by considering how I could visually represent
+          it. I first explored ideas by making rough paper sketches of
+          screen layouts and considering how they could be manipulated
+          to introduce functionality. When doing so I was trying to
+          apply the ergonomics motivated design recommendations by
+          positioning the interactions in the central area of the screen.
+          Once I had settled on a general layout I moved to Figma to
+          develop the next iterations.
+        </p>
+
         <div class='video-div'>
-          <h3>Interactive Prototype Video</h3>
+          <h3 class="header-follow">Interactive Prototype Video</h3>
           <!-- TODO fix so video diplays correctly on mobiles -->
           <div class="video-container">
             <video
@@ -164,27 +178,61 @@
           </div>
         </div>
 
-        <h3>Design</h3>
+        <h3 class="header-follow">Design</h3>
+        <p>
+          The main screen of the application is ‘Playing Playlist Screen’
+          shown below. The playlist is the focus of the application. The
+          user is able to see and interact with: the songs previously
+          played, the current song and the songs next in the playlist.
+        </p>
         <div class="playlist-screen-container">
           <div class="playlist-screen-holder">
             <img class="playlist-screen" src="./assets/playlist/screens/home.svg">
             <h3 class="playlist-screen-label">Playlist Player</h3>
+            <h4 class="playlist-screen-label">Playing Playlist Screen</h4>
           </div>
         </div>
 
-        <h3>Layout</h3>
+        <h3 class=header-follow>Layout</h3>
+        <p>
+          The ‘Playing Playlist’ screen has a two column layout as
+          illustrated below. The first column (blue) spans the majority of
+          the screen and is positioned to the left of the screen; this
+          column is used as a container to hold the contents of the
+          playlist. The column is also scrollable thus is able to
+          accomodate playlists of variable size. The column to the
+          right (purple) contains playlist controls including play,
+          pause and shuffle. The right column is fixed in position.
+        </p>
+        <p>
+          I chose this layout because it is well aligned with the design
+          recommendations as it enables almost all interactions to be
+          positioned in the vertically central region.
+        </p>
         <div class="playlist-screen-container">
           <div class="playlist-screen-holder">
             <img class="playlist-screen" src="./assets/playlist/screens/columns.svg">
             <h3 class="playlist-screen-label">Two Column Layout</h3>
           </div>
-          <div class="playlist-screen-holder">
-            <img class="playlist-screen" src="./assets/playlist/screens/zone.svg">
-            <h3 class="playlist-screen-label">Centred Input</h3>
-          </div>
         </div>
 
-        <h3>Playlist Manipulation</h3>
+        <h3 class="header-follow">Playlist Manipulation</h3>
+        <p>
+          Three important playlist functions I required the design to
+          feature were:
+        </p>
+        <ul>
+          <li>Song adding</li>
+          <li>Song removal</li>
+          <li>Song reordering</li>
+        </ul>
+        <p>
+          The design enables these actions largely using direct manipulation.
+          The user is able to insert songs by holding on the position in the
+          playlist where they want to place the song. Songs can be dragged
+          around to reorder them or dragged out of the list to remove them.
+        </p>
+
         <div class="playlist-screen-container">
           <div class="playlist-screen-holder">
             <img class="playlist-screen" src="./assets/playlist/screens/add.svg">
@@ -203,12 +251,71 @@
 
     </div>
 
-      <div class="content-panel">
-        <div class="inner-content">
-          <h2>Usability Testing</h2>
+    <!-- Usability Testing -->
+    <div class="content-panel">
+      <div class="inner-content">
+        <h2>Usability Testing</h2>
+        <h3 class="header-start">Description</h3>
+        <p>
+          To test the design and learn about how it could be improved I
+          decided to run a few think aloud usability tests. I ran two tests
+          remotely and one in-person.
+        </p>
+        <p>
+          For the remote tests I set up a video call with the participant such
+          that they were able to view their screen and I shared the Figma
+          prototype with them. This enabled the participant to interact with the
+          prototype, me to observe them and us to converse. A limitation
+          of this testing was that they interacted with a simulation of
+          a phone using a laptop rather than a physical phone.
+          Consequently the validity of the test with respect to
+          ergonomics is low. For the in-person test, the participant
+          interacted with the prototype on a phone using the Figma mirror app.
+        </p>
+        <h3 class="header-follow">Findings</h3>
+        <p>
+          Participants struggled to discover the interactions for adding and
+          removing songs. This is not too surprising because there is nothing
+          to visually indicate their existence. Once the participants had
+          experienced the interactions they appeared happy to use
+          them going forward. This usability problem could potentially
+          be addressed by either adding signifiers to the design or adding
+          a tutorial flow to introduce them to new users. Other than
+          this, participants did not encounter issues interacting with
+          the prototype.
+        </p>
 
+      </div>
+    </div>
+
+    <!-- Conclusions -->
+    <div class="content-panel">
+      <div class="inner-content">
+        <h2>References</h2>
+        <div class="references">
+          <ul>
+            <li>
+              Bergstrom-Lehtovirta, J. and Oulasvirta, A., 2014, April.
+              Modeling the functional area of the thumb on mobile touchscreen
+              surfaces. In Proceedings of the SIGCHI Conference on
+              Human Factors in Computing Systems (pp. 1991-2000).
+            </li>
+            <li>
+              Park, Y.S. and Han, S.H., 2010. Touch key design for one-handed
+              thumb interaction with a mobile phone: Effects of touch key size
+              and touch key location. International journal of industrial
+              ergonomics, 40(1), pp.68-76.
+            </li>
+            <li>
+              Trudeau, M.B., Young, J.G., Jindrich, D.L. and Dennerlein, J.T.,
+              2012. Thumb motor performance varies with thumb and wrist
+              posture during single-handed mobile phone use. Journal of
+              biomechanics, 45(14), pp.2349-2354.
+            </li>
+          </ul>
         </div>
       </div>
+    </div>
 
 
 

@@ -4,6 +4,7 @@
   justify-content: space-around;
   background-color: #101010;
   flex-wrap: wrap;
+  margin: 10px 0px;
 }
 
 .playlist-screen-holder {
@@ -20,4 +21,9 @@
 
 .playlist-screen-label {
   text-align: center;
+  margin-bottom: 0;
+}
+
+.references {
+  font-size: small;
 }
