@@ -1,0 +1,23 @@
+.playlist-screen-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #101010;
+  flex-wrap: wrap;
+}
+
+.playlist-screen-holder {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+}
+
+.playlist-screen {
+  height: 500px;
+  width: auto;
+}
+
+.playlist-screen-label {
+  text-align: center;
+}
