@@ -129,6 +129,11 @@ footer {
   margin-top: 1em;
 }
 
+.copyright {
+  justify-content: center;
+  display: flex;
+  font-size: small;
+}
 
 .logo-outer {
   display: flex;
