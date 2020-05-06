@@ -16,6 +16,31 @@ h4 {
   margin-top: 1em;
   margin-bottom: 0;
 }
+
+.div-center {
+  display: flex;
+  justify-content: center;
+}
+
+.div-space-between {
+  display: flex;
+  flex-direction: horizontal;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.education-img {
+  height:auto;
+  width:100%;
+  max-width: 500px;
+}
+
+.pio-img{
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
 .header-follow {
   margin-top: 2em;
   margin-bottom: 0em;
