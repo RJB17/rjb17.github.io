@@ -33,6 +33,7 @@ h4 {
   height:auto;
   width:100%;
   max-width: 500px;
+  align-self: center;
 }
 
 .pio-img{
