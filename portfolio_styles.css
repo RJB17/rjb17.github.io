@@ -405,6 +405,12 @@ video {
   padding: 5px 5px;
 }
 
+.fake-news-top-img {
+  width: 100%;
+  height: auto;
+  margin: 10px auto;
+}
+
 @media only screen and (min-width: 600px) {
   .header-nav{
     display: flex;
@@ -436,5 +442,12 @@ video {
   }
   .popup-img {
     max-width: 400px;
+  }
+
+  .fake-news-top-img {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    margin: 10px auto;
   }
 }
