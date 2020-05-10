@@ -145,6 +145,7 @@ footer {
 .content-panel {
   background-color: #F0F0F0;
   margin: 10px 0px;
+  border-radius: 20px;
 }
 
 .inner-content {
@@ -360,6 +361,7 @@ footer {
 .cs-tile {
   width:100%;
   height: auto;
+  border-radius: 25px;
 }
 .cs-btn {
   cursor: pointer;
@@ -386,6 +388,21 @@ video {
 
 .transparent {
   background-color: white;
+}
+
+.wayfinding-screens {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width:80%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.wayfinding-screen {
+  height: 500px;
+  width: auto;
+  padding: 5px 5px;
 }
 
 @media only screen and (min-width: 600px) {
